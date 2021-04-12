@@ -84,7 +84,7 @@ async def play(client: Client, message_: Message):
         res.delete
         m = await client.send_photo(
         chat_id=message_.chat.id,
-        photo="https://telegra.ph/file/fe07b15733ed56f103cb4.jpg",
+        photo="https://telegra.ph/file/23b4ee75d4f6919d80e4a.jpg",
         caption=f"Playing Your song Via Danish Op BoT😁🔥.",
          ) 
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
@@ -280,7 +280,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 await f.close()
 
     image1 = Image.open("./background.png")
-    image2 = Image.open("etc/DEVIL.png")
+    image2 = Image.open("etc/Danish.jpg")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
